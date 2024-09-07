@@ -26,6 +26,11 @@ class Index extends Component
         'productUpdated' => 'productUpdateHandler'
     ];
 
+
+    public function mount()
+    {
+        $this->search = request()->query('search', $this->search);
+    }
     public function render()
     {
         return view('livewire.product.index', [

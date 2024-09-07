@@ -38,7 +38,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-link">
+                            <a href="{{ route('shop.index') }}" class="nav-link">Shop</a>
+                        </li>
+                        @livewire('shop.cartnav')
                     </ul>
 
                     <!-- Right Side Of Navbar -->
