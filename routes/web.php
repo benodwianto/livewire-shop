@@ -24,3 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::livewire('admin/product', 'product.index')->name('admin.product')->middleware('auth');
 Route::livewire('shop', 'shop.index')->name('shop.index');
 Route::livewire('cart', 'shop.cart')->name('shop.cart');
+Route::livewire('checkout', 'shop.checkout')->name('shop.checkout');

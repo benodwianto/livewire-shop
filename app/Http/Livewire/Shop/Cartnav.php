@@ -12,7 +12,8 @@ class Cartnav extends Component
 
     protected $listeners = [
         'addToCart' => 'updateCartTotal',
-        'removeFromCart' => 'updateCartTotal'
+        'removeFromCart' => 'updateCartTotal',
+        'cartClear' => 'updateCartTotal'
     ];
 
     public function mount()
